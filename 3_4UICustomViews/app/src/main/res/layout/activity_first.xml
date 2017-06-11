@@ -8,7 +8,7 @@
     <Button
         android:id="@+id/button_Previous1"
         android:textAllCaps="false"
-        android:text="PREV"
+        android:text="3PREV"
         app:layout_widthPercent="25%"
         app:layout_heightPercent="10%"
         android:layout_alignParentLeft="true"
@@ -16,7 +16,7 @@
     <Button
         android:id="@+id/button_Next1"
         android:textAllCaps="false"
-        android:text="NEXT"
+        android:text="2NEXT"
         app:layout_widthPercent="25%"
         app:layout_heightPercent="10%"
         android:layout_alignParentEnd="true"
