@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "26.0.1"
     defaultConfig {
-        applicationId "activity.example.com.a8_2_1notificationtest"
-        minSdkVersion 24
+        applicationId "com.example.administrator.a8_2_1notificationtest"
+        minSdkVersion 23
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
