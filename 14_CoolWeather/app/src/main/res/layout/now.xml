@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--温度-->
+    <TextView
+        android:id="@+id/text_view_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="90sp"
+        android:paddingTop="45dp"
+        />
+
+    <!--位于温度正下方-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="45dp"
+        >
+
+        <!--天气概况，如晴，阴，多云-->
+        <TextView
+            android:id="@+id/text_view_now_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="#fff"/>
+
+        <!--空气质量，如，优，严重污染-->
+        <TextView
+            android:id="@+id/text_view_aqi_qlty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</LinearLayout>
