@@ -54,7 +54,7 @@ public class AutoUpdateService extends Service {
 
         // 管理器 + 触发时间 + PendingIntent + 取消PI + 重新设置PI-->定时时间到-->onStartCommand()
         AlarmManager manager = (AlarmManager)getSystemService(ALARM_SERVICE);
-        int timeout = 2 * 60 * 1000;
+        int timeout = 8*60 * 60 * 1000;
         long trigger = SystemClock.elapsedRealtime() + timeout;
         Intent it = new Intent(this, AutoUpdateService.class);
         PendingIntent pi = PendingIntent.getService(this, 0, it, 0);

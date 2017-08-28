@@ -20,7 +20,7 @@ public class MyApplication extends Application {
         context = getApplicationContext();
 //        LitePalApplication.initialize(context);
         LitePal.initialize(context);
-        CrashReport.initCrashReport(getApplicationContext(), "826f3c9519", true);
+        //CrashReport.initCrashReport(getApplicationContext(), "826f3c9519", true);
     }
 
     public static Context getContext() {

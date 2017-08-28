@@ -206,32 +206,34 @@ public class WeatherActivity extends AppCompatActivity {
 
             dailyForecastLayout.removeAllViews();
             for (Forecast forecast : weather.dailyForecastList) {
-                View view = LayoutInflater.from(WeatherActivity.this).inflate(R.layout.forecast_item,
-                        dailyForecastLayout, false);
+                for (int i = 0; i < 3; i++) {
+                    View view = LayoutInflater.from(WeatherActivity.this).inflate(R.layout.forecast_item,
+                            dailyForecastLayout, false);
 
-            /*
-             * 注意这里要使用view.findViewById()的调用模式。虽然WeatherActivity引用了
-             * forecast.xml布局，但这个布局内只有一个LinearLayout，并没有添加
-             * text_view_date，text_view_info_txt，text_view_tmp_min，text_view_tmp_max
-             * 这四个控件，这四个控件只在forecast_item.xml布局里才定义了，所以要通过
-             * forecast_item这个布局才可以引用这四个控件。
-             *
-             * 不加view去调用findViewById()会导致返回的控件为null
-             * */
+                    /*
+                     * 注意这里要使用view.findViewById()的调用模式。虽然WeatherActivity引用了
+                     * forecast.xml布局，但这个布局内只有一个LinearLayout，并没有添加
+                     * text_view_date，text_view_info_txt，text_view_tmp_min，text_view_tmp_max
+                     * 这四个控件，这四个控件只在forecast_item.xml布局里才定义了，所以要通过
+                     * forecast_item这个布局才可以引用这四个控件。
+                     *
+                     * 不加view去调用findViewById()会导致返回的控件为null
+                     * */
+                    TextView dateText = (TextView)view.findViewById(R.id.text_view_date);
+                    dateText.setPadding(0, 10, 0, 0);
+                    dateText.setText(forecast.date);
+                    TextView wtOverview = (TextView)view.findViewById(R.id.text_view_info_txt);
+                    wtOverview.setPadding(0, 10, 0, 0);
+                    wtOverview.setText(forecast.cond.txt_d); // 白天, n表示夜晚
+                    TextView minTmp = (TextView)view.findViewById(R.id.text_view_tmp_min);
+                    minTmp.setPadding(0, 10, 0, 0);
+                    minTmp.setText(forecast.temperature.min);
+                    TextView maxTmp = (TextView)view.findViewById(R.id.text_view_tmp_max);
+                    minTmp.setPadding(0, 10, 0, 0);
+                    maxTmp.setText(forecast.temperature.max);
+                    dailyForecastLayout.addView(view);
+                }
 
-                TextView dateText = (TextView)view.findViewById(R.id.text_view_date);
-                dateText.setPadding(0, 10, 0, 0);
-                dateText.setText(forecast.date);
-                TextView wtOverview = (TextView)view.findViewById(R.id.text_view_info_txt);
-                wtOverview.setPadding(0, 10, 0, 0);
-                wtOverview.setText(forecast.cond.txt_d); // 白天, n表示夜晚
-                TextView minTmp = (TextView)view.findViewById(R.id.text_view_tmp_min);
-                minTmp.setPadding(0, 10, 0, 0);
-                minTmp.setText(forecast.temperature.min);
-                TextView maxTmp = (TextView)view.findViewById(R.id.text_view_tmp_max);
-                minTmp.setPadding(0, 10, 0, 0);
-                maxTmp.setText(forecast.temperature.max);
-                dailyForecastLayout.addView(view);
             }
             if (weather.aqi != null) {
                 airQualityVal.setText(weather.aqi.city.aqi);
@@ -344,8 +346,8 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         // 活动推出后不想让服务结束，因此不调用stopService()
-        /*if (intentAutoUpdateSer != null) {
+        if (intentAutoUpdateSer != null) {
             stopService(intentAutoUpdateSer);
-        }*/
+        }
     }
 }
