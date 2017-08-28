@@ -73,6 +73,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     private void generatePage() {
         PageContentFragment pageContentFrag = new PageContentFragment();
+
+        /*
+         * getView一直返回null，跟踪发现这里的getView()返回后，Fragment的onCreateView()
+         * 才调用
+         */
+        /*
         View view = pageContentFrag.getView();
         if (view != null) {
             TextView textView = (TextView) (view.findViewById(R.id.text_view_title));
@@ -80,15 +86,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             textView.setText(text);
         } else {
             Log.d(TAG, "generatePage: a nullable fragment view");
-        }
+        }*/
 
         String titleString = "Hello World ==_== " +  + fragmentList.size();
         Bundle bundle = new Bundle();
         bundle.putString("title", titleString);
+        bundle.putInt("current_position", fragmentList.size());
         pageContentFrag.setArguments(bundle);
 
         fragmentList.add(pageContentFrag);
         pagerAdapter.notifyDataSetChanged();
+        viewPager.setCurrentItem(fragmentList.size());
         // pageContentFrag.onHiddenChanged(true);
     }
 

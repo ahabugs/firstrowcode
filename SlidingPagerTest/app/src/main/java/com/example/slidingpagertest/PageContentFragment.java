@@ -24,6 +24,14 @@ public class PageContentFragment extends Fragment {
         // Required empty public constructor
     }
 
+    /*
+     * 当定义带参数的构造函数时
+     * 提示利用Bundle来传递参数，setArguments(bundle), bundle = getArguments()
+     */
+    /*public PageContentFragment(String title) {
+
+    }*/
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
