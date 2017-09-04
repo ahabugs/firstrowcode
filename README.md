@@ -16,11 +16,11 @@
     3_5ListViewTest    
   5)practice integrated with RecycleView, Nine-Patch    
     3_7UIBestPractice    
-  4.Use Fragment    
-    4_2FragmentTest     
-    4_4_FragmentTest    
-5.Use Fragment app on Pad and Phone    
-  4_5FragmentBestPractice    
+  6)Use Fragment    
+    4_2FragmentTest    
+    4_4_FragmentTest    
+  7)Use Fragment app on Pad and Phone    
+    4_5FragmentBestPractice
 6.Learn how to use Broadcast Receiver    
   1)5_1BroadcastTest    
   2)Static broadcast reciever    
