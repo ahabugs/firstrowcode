@@ -1,10 +1,10 @@
 # firstrowcode
 		
-1. Activity launch mode and life cycle.		
-  2_4_4_ActivityLifeCycleTest		
-  2_5_LaunchMode_Test	
-2. Practice Activity	
-  2_6_Skills		
+1. Activity launch mode and life cycle.	
+2_4_4_ActivityLifeCycleTest
+2_5_LaunchMode_Test
+2. Practice Activity
+2_6_Skills		
 3. UI widget about ImageView,AlerDialog,ProgressDialog and etc.
   3_2_UIWidgetTest		
 4. LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice
