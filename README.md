@@ -2,18 +2,20 @@
 		
 1.Activity launch mode and life cycle
 
-2_4_4_ActivityLifeCycleTest
-
-2_5_LaunchMode_Test
-2. Practice Activity
-2_6_Skills		
-3. UI widget about ImageView,AlerDialog,ProgressDialog and etc.
-  3_2_UIWidgetTest		
-4. LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice
-  3_3UILayout		
-5.Show how to customize a view control
-  3_4_UICustomViews		
-6. how to use ListView 
+  2_4_4_ActivityLifeCycleTest
+  2_5_LaunchMode_Test
+  
+2.Practice Activity
+  2_6_Skills
+  
+3.UI
+  1)widget about ImageView,AlerDialog,ProgressDialog and etc.
+    3_2_UIWidgetTest
+  2)LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice
+    3_3UILayout
+  3)Show how to customize a view control
+    3_4_UICustomViews
+  4)how to use ListView
   3_5ListViewTest		
 7. A practice integrated with RecycleView, Nine-Patch
   3_7UIBestPractice		
