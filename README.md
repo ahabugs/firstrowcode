@@ -20,8 +20,8 @@
     4_2FragmentTest    
     4_4_FragmentTest    
   7)Use Fragment app on Pad and Phone    
-    4_5FragmentBestPractice
-6.Learn how to use Broadcast Receiver    
+    4_5FragmentBestPractice    
+  6.Learn how to use Broadcast Receiver    
   1)5_1BroadcastTest    
   2)Static broadcast reciever    
     5_2BootCompleteReceiver    
