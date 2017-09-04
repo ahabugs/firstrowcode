@@ -7,17 +7,18 @@
   2_6_Skills    
 3.UI    
   1)widget about ImageView,AlerDialog,ProgressDialog and etc.    
-    3_2_UIWidgetTest     
+    3_2_UIWidgetTest    
   2)LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice    
-    3_3UILayout    
-  3)Show how to customize a view control    
+    3_3UILayout     
+  3)Show how to customize a view control    
     3_4_UICustomViews    
-  4)how to use ListView    
-  3_5ListViewTest A practice integrated with RecycleView, Nine-Patch    
-  3_7UIBestPractice    
-4.Use Fragment    
-  4_2FragmentTest    
-  4_4_FragmentTest    
+  4)how to use ListView     
+    3_5ListViewTest    
+  5)practice integrated with RecycleView, Nine-Patch    
+    3_7UIBestPractice    
+  4.Use Fragment    
+    4_2FragmentTest     
+    4_4_FragmentTest    
 5.Use Fragment app on Pad and Phone    
   4_5FragmentBestPractice    
 6.Learn how to use Broadcast Receiver    
