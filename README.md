@@ -9,7 +9,7 @@
   1)widget about ImageView,AlerDialog,ProgressDialog and etc.    
     3_2_UIWidgetTest    
   2)LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice    
-    3_3UILayout     
+    3_3UILayout    
   3)Show how to customize a view control    
     3_4_UICustomViews    
   4)how to use ListView     
