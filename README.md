@@ -12,10 +12,10 @@
     3_3UILayout    
   3)Show how to customize a view control    
     3_4_UICustomViews    
-  4)how to use ListView     
+  4)how to use ListView    
     3_5ListViewTest    
   5)practice integrated with RecycleView, Nine-Patch    
-    3_7UIBestPractice    
+    3_7UIBestPractice    
   6)Use Fragment    
     4_2FragmentTest    
     4_4_FragmentTest    
