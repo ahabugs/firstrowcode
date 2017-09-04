@@ -1,5 +1,4 @@
 # firstrowcode
-# firstrowcode
 		
 1. Activity launch mode and life cycle.		
   2_4_4_ActivityLifeCycleTest		
