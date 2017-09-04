@@ -13,15 +13,14 @@
   3)Show how to customize a view control    
     3_4_UICustomViews    
   4)how to use ListView    
-  3_5ListViewTest    
-7. A practice integrated with RecycleView, Nine-Patch    
-3_7UIBestPractice    
-8.Use Fragment    
-  4_2FragmentTest    
-  4_4_FragmentTest    
-9.Use Fragment app on Pad and Phone    
-  4_5FragmentBestPractice    
-10.Learn how to use Broadcast Receiver    
+  3_5ListViewTest A practice integrated with RecycleView, Nine-Patch     
+3_7UIBestPractice   
+4.Use Fragment     
+  4_2FragmentTest    
+  4_4_FragmentTest    
+5.Use Fragment app on Pad and Phone    
+  4_5FragmentBestPractice    
+6.Learn how to use Broadcast Receiver    
   1)5_1BroadcastTest    
   2)Static broadcast reciever   
   5_2BootCompleteReceiver    
@@ -33,7 +32,7 @@
   5_4LocalBroadcastReceiver    
   5)Use broadcast to finish all activity   
   5_5_BroadcastBestPractice	
-11.Storage skills
+7.Storage skills
   1)File
     6_2FilePersistenceTest		
   2)SharedPreferences
@@ -41,13 +40,13 @@
     6_3_3_PreferenceManagerRememberPassword		
   3)Database SQLite and LitePal
     6_4_DataBaseTest		
-    6_5LitePalTest		
-11.Content Provider
+    6_5LitePalTest		
+8.Content Provider
   7_2RuntimePermissionTest		
   7_3ContactsTest		
   7_4ContentProviderTest		
   7_4Database
-12.Media		
+9.Media		
   1)Notifications
     8_2_1NotificationTest		
   2)Cameral
@@ -55,7 +54,7 @@
   3)Audio and Video
     8_4_2PlayVideoTest		
     8_4_PlayAudioTest	
-13.Network communition with http
+10.Network communition with http
   1)Use WebView control to load a web page content
     9_1WebViewTest		
   2)Show http connection in two ways
@@ -71,7 +70,7 @@
     9_5_1_HttpURLConnectionTest		
   6)Use Okhttp to communicate with a IP
     9_5_2_OkHttpTest		
-14.Services
+11.Services
   1)Message
    10_2_2_AsyncMessage		
   2)how to forgroud service and intentservice 
@@ -82,20 +81,20 @@
    10_5_2_ServiceSubThreadStopSelfTest		
   3)Use AsynTask to download Java SDK from the internet. Support broken downloads 
    10_6_DownloadServiceBestPractice		
-15.Show Location Base service with using Baidu Map 
+12.Show Location Base service with using Baidu Map 
   1)Locate myself postion
    11_3_LocationAddressTest		
   2)Show myself position on the Map
    11_4_LocationMap
-16.Material Design		
+13.Material Design		
   12_2_2_ToolBarTest		
   12_3_1_DrawerLayout		
   12_3_2_NavigationViewTest	
-17. Alarm Service with using PendingIntent	
+14. Alarm Service with using PendingIntent	
   13_5_Alarm		
-18.An appliction can show the weather infomation of all most cities in our country.
+15.An appliction can show the weather infomation of all most cities in our country.
   14_CoolWeather
-19.A demo showing the basic principle of MVC architecture
+16.A demo showing the basic principle of MVC architecture
   MVCTest		
-20.Add and Delete Pager
+17.Add and Delete Pager
   SlidingPagerTest		
