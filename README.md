@@ -33,7 +33,7 @@
     5_4LocalBroadcastReceiver    
   5)Use broadcast to finish all activity    
     5_5_BroadcastBestPractice    
-5.Storage skills    
+5.Storage skills     
   1)File    
     6_2FilePersistenceTest    
   2)SharedPreferences    
@@ -41,7 +41,7 @@
     6_3_3_PreferenceManagerRememberPassword    
   3)Database SQLite and LitePal    
     6_4_DataBaseTest    
-    6_5LitePalTest    
+    6_5LitePalTest     
 6.Content Provider    
   7_2RuntimePermissionTest    
   7_3ContactsTest    
