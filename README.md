@@ -21,19 +21,19 @@
     4_4_FragmentTest    
   7)Use Fragment app on Pad and Phone    
     4_5FragmentBestPractice    
-  6.Learn how to use Broadcast Receiver    
-  1)5_1BroadcastTest    
+4.Learn how to use Broadcast Receiver    
+  1)5_1BroadcastTest    
   2)Static broadcast reciever    
     5_2BootCompleteReceiver    
   3)Asychronous and sychronous BroadcastReceiver    
-    5_3AnotherBroadcastReceiver    
+    5_3AnotherBroadcastReceiver     
     5_3MyBroadcastReceiver    
     5_3OrderBroadcastReceiver    
   4)local Broadcast Receiver    
     5_4LocalBroadcastReceiver    
   5)Use broadcast to finish all activity    
     5_5_BroadcastBestPractice    
-7.Storage skills    
+5.Storage skills    
   1)File    
     6_2FilePersistenceTest    
   2)SharedPreferences    
@@ -41,36 +41,40 @@
     6_3_3_PreferenceManagerRememberPassword    
   3)Database SQLite and LitePal    
     6_4_DataBaseTest    
-    6_5LitePalTest    
-8.Content Provider    
+    6_5LitePalTest    
+6.Content Provider    
   7_2RuntimePermissionTest    
   7_3ContactsTest    
   7_4ContentProviderTest    
-  7_4Database    
-9.Media    
-  1)Notifications   
+  7_4Database    
+7.Media    
+  1)Notifications    
     8_2_1NotificationTest    
-  2)Cameral    
+  2)Cameral   
     8_3_1CameralAlbumTest    
   3)Audio and Video    
     8_4_2PlayVideoTest    
     8_4_PlayAudioTest    
-10.Network communition with http    
-  1)Use WebView control to load a web page content    
-    9_1WebViewTest    
-  2)Show http connection in two ways    
-    9_2_1NetWorkTest    
-    9_2_2_NetworkOKHttpTest    
-  3)Parse XML skills    
-    9_3_1PareXMLPullTest    
-    9_3_2_ParseXMLSAXTest    
-  4)Parse Json    
-    9_4_2_ParseJSONWithGSONTest    
-    9_4_ParseXMLJSONObjectTest    
-  5)Create a base HttpUtil class    
-    9_5_1_HttpURLConnectionTest    
-  6)Use Okhttp to communicate with a IP    
-    9_5_2_OkHttpTest    
+ 8.Network communition with http    
+   1)Use WebView control to load a web page content    
+     9_1WebViewTest    
+   2)Show http connection in two ways    
+     9_2_1NetWorkTest    
+     9_2_2_NetworkOKHttpTest    
+   3)Parse XML skills    
+     9_3_1PareXMLPullTest    
+     9_3_2_ParseXMLSAXTest    
+   4)Parse Json    
+     9_4_2_ParseJSONWithGSONTest    
+     9_4_ParseXMLJSONObjectTest    
+   5)Create a base HttpUtil class    
+     9_5_1_HttpURLConnectionTest    
+   6)Use Okhttp to communicate with a IP    
+     9_5_2_OkHttpTest    
+     
+     
+     
+     
 11.Services    
   1)Message    
     10_2_2_AsyncMessage    
