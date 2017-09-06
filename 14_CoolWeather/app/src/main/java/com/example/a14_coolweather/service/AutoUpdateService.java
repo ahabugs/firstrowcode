@@ -23,7 +23,7 @@ import okhttp3.Response;
 
 public class AutoUpdateService extends Service {
     private static final String TAG = "AutoUpdateService";
-
+    private Intent it;
     // private MBinder binder = new MBinder();
 
     public AutoUpdateService() {
@@ -56,7 +56,7 @@ public class AutoUpdateService extends Service {
         AlarmManager manager = (AlarmManager)getSystemService(ALARM_SERVICE);
         int timeout = 8*60 * 60 * 1000;
         long trigger = SystemClock.elapsedRealtime() + timeout;
-        Intent it = new Intent(this, AutoUpdateService.class);
+        it = new Intent(this, AutoUpdateService.class);
         PendingIntent pi = PendingIntent.getService(this, 0, it, 0);
         manager.cancel(pi);
         manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, trigger, pi);
@@ -76,6 +76,7 @@ public class AutoUpdateService extends Service {
 
     @Override
     public void onDestroy() {
+        stopService(it);
         super.onDestroy();
     }
 
