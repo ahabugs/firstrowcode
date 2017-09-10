@@ -1,6 +1,4 @@
 # firstrowcode<br>
-## hello<br>
-		
 ## Activity launch mode and life cycle<br>
 		2_4_4_ActivityLifeCycleTest<br>
 		2_5_LaunchMode_Tes<br>
