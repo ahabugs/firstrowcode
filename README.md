@@ -4,24 +4,26 @@
 2_5_LaunchMode_Tes<br>
 ### Practice Activity<br>
 >2_6_Skills<br>
-### 3.UI<br>
-### widget about ImageView,AlerDialog,ProgressDialog and etc.<br>
->3_2_UIWidgetTest<br>
-  * LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice<br>
-    3_3UILayout    
-  3)Show how to customize a view control    
-    3_4_UICustomViews    
-  4)how to use ListView    
-    3_5ListViewTest    
-  5)practice integrated with RecycleView, Nine-Patch    
-    3_7UIBestPractice    
-  6)Use Fragment    
-    4_2FragmentTest    
-    4_4_FragmentTest    
-  7)Use Fragment app on Pad and Phone    
-    4_5FragmentBestPractice    
-4.Learn how to use Broadcast Receiver    
-  1)5_1BroadcastTest    
+### UI<br>
+#### widget about ImageView,AlerDialog,ProgressDialog and etc.<br>
+3_2_UIWidgetTest<br>
+>LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice<br>
+3_3UILayout    
+>Show how to customize a view control<br>
+3_4_UICustomViews<br>
+>how to use ListView<br>
+3_5ListViewTest<br>
+>practice integrated with RecycleView, Nine-Patch<br>
+3_7UIBestPractice<br>
+#### Use Fragment<br>
+4_2FragmentTest<br>
+4_4_FragmentTest<br>
+>Use Fragment app on Pad and Phone<br>
+4_5FragmentBestPractice<br>
+
+
+4.Learn how to use Broadcast Receiver<br>
+  1)5_1BroadcastTest<br>
   2)Static broadcast reciever    
     5_2BootCompleteReceiver    
   3)Asychronous and sychronous BroadcastReceiver    
