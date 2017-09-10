@@ -73,7 +73,7 @@
 ### Services<br>
 * Message<br>
 >10_2_2_AsyncMessage<br>
-* how to forgroud service and intentservice<br>
+* how to start forgroud service and intentservice<br>
 >10_3_1_ServiceTest<br>
 10_3_3_DownloadBinderServiceTest<br>
 10_5_1_ForgoundServiceTest<br>
@@ -84,7 +84,7 @@
 ### Show Location Base service with using Baidu Map<br>
 * Locate myself postion<br>
 >11_3_LocationAddressTest<br>
-### Show myself position on the Map<br>
+* Show myself position on the Map<br>
 >11_4_LocationMap<br>
 ### Material Design<br>
 >12_2_2_ToolBarTest<br>
@@ -94,7 +94,7 @@
 >13_5_Alarm<br>
 ### Show weather infomation of most cities in our country.<br>
 >14_CoolWeather<br>
-### A demo showing the basic principle of MVC architecture<br>
+### Show the basic principle of MVC architecture<br>
 >MVCTest<br>
 ### Add and Delete Pager<br>
 >SlidingPagerTest<br>
