@@ -1,6 +1,6 @@
 # firstrowcode
 		
->1.Activity launch mode and life cycle   \<br>abcdssss 
+>1.Activity launch mode and life <br>cycle   \<br>abcdssss 
   >>2_4_4_ActivityLifeCycleTest    
   >>>2_5_LaunchMode_Test    
 2.Practice Activity
