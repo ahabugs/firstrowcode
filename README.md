@@ -5,21 +5,21 @@
 ### Practice Activity<br>
 >2_6_Skills<br>
 ### UI<br>
-#### widget about ImageView,AlerDialog,ProgressDialog and etc.<br>
-3_2_UIWidgetTest<br>
->LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice<br>
-3_3UILayout    
->Show how to customize a view control<br>
-3_4_UICustomViews<br>
->how to use ListView<br>
-3_5ListViewTest<br>
->practice integrated with RecycleView, Nine-Patch<br>
-3_7UIBestPractice<br>
-#### Use Fragment<br>
-4_2FragmentTest<br>
+* widget about ImageView,AlerDialog,ProgressDialog and etc.<br>
+>3_2_UIWidgetTest<br>
+* LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice<br>
+>3_3UILayout    
+* Show how to customize a view control<br>
+> 3_4_UICustomViews<br>
+* how to use ListView<br>
+>3_5ListViewTest<br>
+* practice integrated with RecycleView, Nine-Patch<br>
+>3_7UIBestPractice<br>
+* Fragment<br>
+>4_2FragmentTest<br>
 4_4_FragmentTest<br>
->Use Fragment app on Pad and Phone<br>
-4_5FragmentBestPractice<br>
+* Use Fragment app on Pad and Phone<br>
+>4_5FragmentBestPractice<br>
 
 
 4.Learn how to use Broadcast Receiver<br>
