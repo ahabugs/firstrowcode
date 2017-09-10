@@ -1,12 +1,12 @@
 # firstrowcode<br>
 ### Activity launch mode and life cycle<br>
->>2_4_4_ActivityLifeCycleTest<br>
-<<2_5_LaunchMode_Tes<br>
-### 2.Practice Activity
-  2_6_Skills    
-3.UI    
-  1)widget about ImageView,AlerDialog,ProgressDialog and etc.    
-    3_2_UIWidgetTest    
+>2_4_4_ActivityLifeCycleTest<br>
+2_5_LaunchMode_Tes<br>
+### Practice Activity<br>
+>2_6_Skills<br>
+### 3.UI<br>
+>*widget about ImageView,AlerDialog,ProgressDialog and etc.<br>
+>>3_2_UIWidgetTest<br>
   2)LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice    
     3_3UILayout    
   3)Show how to customize a view control    
