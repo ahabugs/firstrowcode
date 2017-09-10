@@ -5,9 +5,9 @@
 ### Practice Activity<br>
 >2_6_Skills<br>
 ### 3.UI<br>
->*widget about ImageView,AlerDialog,ProgressDialog and etc.<br>
->>3_2_UIWidgetTest<br>
-  2)LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice    
+### widget about ImageView,AlerDialog,ProgressDialog and etc.<br>
+>3_2_UIWidgetTest<br>
+  * LinearLayout RelativeLayout, FrameLayout and PercentFrameLayout Practice<br>
     3_3UILayout    
   3)Show how to customize a view control    
     3_4_UICustomViews    
