@@ -1,8 +1,8 @@
 # firstrowcode<br>
-## Activity launch mode and life cycle<br>
-		2_4_4_ActivityLifeCycleTest<br>
-		2_5_LaunchMode_Tes<br>
-###2.Practice Activity
+### Activity launch mode and life cycle<br>
+>>2_4_4_ActivityLifeCycleTest<br>
+<<2_5_LaunchMode_Tes<br>
+### 2.Practice Activity
   2_6_Skills    
 3.UI    
   1)widget about ImageView,AlerDialog,ProgressDialog and etc.    
