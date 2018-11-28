@@ -27,6 +27,7 @@ android {
         }
     }
 
+    flavorDimensions "default"
     productFlavors {
         qihoo {
             applicationId "com.downloadservicebestpractice.android.qihoo"
