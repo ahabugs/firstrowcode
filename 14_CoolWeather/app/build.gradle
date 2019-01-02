@@ -5,7 +5,7 @@ android {
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.a14_coolweather"
-        minSdkVersion 23
+        minSdkVersion 22
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -14,7 +14,7 @@ android {
 
     signingConfigs {
         config {
-            storeFile file('c:/javakeystore/test.jks')
+            storeFile file('C:/Users/bingo/.android/my-release.keystore.jks')
             storePassword '123456'
             keyAlias 'key0'
             keyPassword '123456'
@@ -28,13 +28,26 @@ android {
             signingConfig signingConfigs.config
         }
     }
-//
-//    productFlavors {
-//        qihoo {
-//            applicationId "com.example.qihoo"
-//        }
-//    }
 
+    flavorDimensions "default"
+    productFlavors {
+        qihoodemo {
+            dimension 'default'
+            applicationId "com.example.qihoodemo"
+        }
+
+        baidudemo {
+            dimension 'default'
+            applicationId "com.example.baidudemo"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
 }
 
 dependencies {

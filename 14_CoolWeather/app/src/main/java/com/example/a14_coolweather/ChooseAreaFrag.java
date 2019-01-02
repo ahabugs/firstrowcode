@@ -3,12 +3,14 @@ package com.example.a14_coolweather;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +33,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.security.auth.login.LoginException;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -41,6 +45,7 @@ import okhttp3.Response;
  * A simple {@link Fragment} subclass.
  */
 public class ChooseAreaFrag extends Fragment {
+    private static final String TAG = "ChooseAreaFragDebug";
     private Button button_back;
     private TextView textViewTitle;
     private ListView listView;
@@ -64,6 +69,8 @@ public class ChooseAreaFrag extends Fragment {
     private int selectedCityIndex = 0;
     private int selectedTownIndex = 0;
     private String responseData;
+    private Context mContext = null;
+    private Activity mActivity = null;
 
     private ProgressDialog progressDialog;
 
@@ -73,16 +80,36 @@ public class ChooseAreaFrag extends Fragment {
         // Required empty public constructor
     }
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+//        if (mContext == null)
+//            mContext = MyApplication.getContext();
+        Log.e(TAG, "onAttach: " + "context=" + context);
+
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate: getActivity=" + getActivity());
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.d(TAG, "onCreateView: " + getActivity());
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_choose_area, container, false);
         button_back = (Button) view.findViewById(R.id.button_back);
         textViewTitle = (TextView)view.findViewById(R.id.text_view_title);
         listView = (ListView)view.findViewById(R.id.list_view);
-        arrayAdapter = new ArrayAdapter<>(getContext(),
+        /*
+        * call getContext() requires API Level 23, but mini 22 is defined in Manifest */
+        /*arrayAdapter = new ArrayAdapter<>(getContext(),
+                android.R.layout.simple_list_item_1, dataList);*/
+
+        arrayAdapter = new ArrayAdapter<>(getActivity(),
                 android.R.layout.simple_list_item_1, dataList);
         listView.setAdapter(arrayAdapter);
         return view;
@@ -90,6 +117,7 @@ public class ChooseAreaFrag extends Fragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        Log.d(TAG, "onActivityCreated: " + getActivity());
         super.onActivityCreated(savedInstanceState);
         // 加载省份
         queryProvinces();
@@ -178,7 +206,8 @@ public class ChooseAreaFrag extends Fragment {
                     @Override
                     public void run() {
                         closeProgressDialog();
-                        Toast.makeText(getContext(), "加载失败", Toast.LENGTH_LONG).show();
+                        Toast.makeText(mContext, "加载失败", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getContext(), "加载失败", Toast.LENGTH_LONG).show();
                     }
                 });
             }
@@ -227,7 +256,8 @@ public class ChooseAreaFrag extends Fragment {
                             queryFromDB(type);
                         } else
                         {
-                            Toast.makeText(getContext(), "处理失败", Toast.LENGTH_LONG).show();
+                            Toast.makeText(mContext, "处理失败", Toast.LENGTH_LONG).show();
+//                            Toast.makeText(getContext(), "处理失败", Toast.LENGTH_LONG).show();
                         }
                     }
                 });

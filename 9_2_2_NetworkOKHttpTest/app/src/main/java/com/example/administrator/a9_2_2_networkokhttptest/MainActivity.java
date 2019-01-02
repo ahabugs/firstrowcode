@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             .build();
                     Response response = client.newCall(request).execute();
                     String stringData = response.body().string();
+                    response.close();
                     showString(stringData, textViewGet);
                     Log.d(TAG, "run: textViewGet " + stringData);
                 } catch (Exception e) {
@@ -96,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             .build();
                     Response response = client.newCall(request).execute();
                     String stringData = response.body().string();
+                    response.close();
                     showString(stringData, textViewPost);
                     Log.d(TAG, "postRequestWithOkHttp: " + stringData);
                 } catch (Exception e) {

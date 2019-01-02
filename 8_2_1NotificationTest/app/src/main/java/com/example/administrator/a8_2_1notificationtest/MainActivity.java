@@ -31,14 +31,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button sendNoticeVibrate = (Button)findViewById(R.id.button_send_notice_vibrate);
         Button sendNoticeLight = (Button)findViewById(R.id.button_send_notice_light);
         Button sendNoticeDefault = (Button)findViewById(R.id.button_send_notice_default);
-        Button sendNoticeBigText = (Button)findViewById(R.id.button_send_notice_bitText);
+        Button sendNoticeBigText1 = (Button)findViewById(R.id.button_send_notice_bitText1);
+        Button sendNoticeBigText2 = (Button)findViewById(R.id.button_send_notice_bitText2);
         Button sendNoticeBigPicture = (Button)findViewById(R.id.button_send_notice_bigPicture);
 
         sendNotice.setOnClickListener(this);
         sendNoticeVibrate.setOnClickListener(this);
         sendNoticeLight.setOnClickListener(this);
         sendNoticeDefault.setOnClickListener(this);
-        sendNoticeBigText.setOnClickListener(this);
+        sendNoticeBigText1.setOnClickListener(this);
+        sendNoticeBigText2.setOnClickListener(this);
         sendNoticeBigPicture.setOnClickListener(this);
     }
 
@@ -126,7 +128,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 manager.notify(NOTIFICATION_ID, notification);
                 break;
 
-            case R.id.button_send_notice_bitText:
+            case R.id.button_send_notice_bitText1:
+                notification = new NotificationCompat.Builder(this)
+                        .setContentTitle("This is big text title")
+                        .setContentText("This is a big string big string big string" +
+                                "big string big string big string big string big string big string" +
+                                "big string big string big string big string big string big string" +
+                                "big string")
+                        .setWhen(System.currentTimeMillis())
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setLargeIcon(BitmapFactory.decodeResource(
+                                getResources(), R.mipmap.ic_launcher))
+                        .setContentIntent(pendingIntent)
+                        //.setAutoCancel(true)
+                        .build();
+                manager.notify(NOTIFICATION_ID, notification);
+                break;
+
+            case R.id.button_send_notice_bitText2:
                 String bigString = new String("This is a big string big string big string" +
                         "big string big string big string big string big string big string" +
                         "big string big string big string big string big string big string" +

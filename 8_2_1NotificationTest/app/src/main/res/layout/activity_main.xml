@@ -33,11 +33,15 @@
         android:text="send notice default"/>
 
     <Button
-        android:id="@+id/button_send_notice_bitText"
+        android:id="@+id/button_send_notice_bitText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send notice big text"/>
-
+        android:text="send notice big text1"/>
+    <Button
+        android:id="@+id/button_send_notice_bitText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send notice big text2"/>
     <Button
         android:id="@+id/button_send_notice_bigPicture"
         android:layout_width="wrap_content"
