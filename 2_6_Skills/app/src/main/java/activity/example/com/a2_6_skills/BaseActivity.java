@@ -17,6 +17,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, getClass().getSimpleName());
         ActivityCollector.addActivity(this);
+
     }
 
     @Override
